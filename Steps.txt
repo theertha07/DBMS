@@ -1,0 +1,7 @@
+Steps-
+1. Install docker for windows
+2. Log into docker hub
+3. Create a docker file in vs code
+4. In the terminal type:
+docker build -t docker-student .
+5. docker run docker-student
