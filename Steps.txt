@@ -1,7 +1,23 @@
 Steps-
-1. Install docker for windows
-2. Log into docker hub
-3. Create a docker file in vs code
-4. In the terminal type:
+1) Install docker for windows
+2) Log into docker hub
+3) Create a docker file in vs code
+4) Creating a virtual environment:
+python3 -m venv venv
+5) To activate virtual environment:
+. venv/bin/activate
+6) Installing dependencies:
+pip install flask
+7) Installing web server:
+pip freeze > requirements.txt
+8) Building image:
+docker build -t python-flask .
+9) Run docker container:
+docker run -p 8000:8000 python-flask
+10) To list running containers:
+docker ps
+11) To get shell inside container
+docker exec -it 14b4a78d1db /bin/sh
+12) In the terminal type:
 docker build -t docker-student .
-5. docker run docker-student
+13) docker run docker-student
