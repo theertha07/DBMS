@@ -11,13 +11,16 @@ pip install flask
 7) Installing web server:
 pip freeze > requirements.txt
 8) Building image:
-docker build -t python-flask .
+docker build -t student .
 9) Run docker container:
-docker run -p 8000:8000 python-flask
+docker run -p 8000:8000 student 
 10) To list running containers:
 docker ps
 11) To get shell inside container
-docker exec -it 14b4a78d1db /bin/sh
+docker exec -it student /bin/sh
 12) In the terminal type:
 docker build -t docker-student .
-13) docker run docker-student
+13) docker run student
+14) To push on docker hub, 
+docker push student
+15) Open docker hub and run the project
