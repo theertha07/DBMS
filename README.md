@@ -1,4 +1,4 @@
-Student Management System and Dockerization
+#Student Management System and Dockerization
 In the software we can register either as a student or as an administrator.
 Administrator has the power to add new user and can edit the students details entered.
 An admin can add students record ,attendance status with department wise.
